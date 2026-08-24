@@ -1,0 +1,9 @@
+Preguntas y Respuestas para el Foro - Actividad 2
+
+¿Con cuál de tus tres modelos te quedarías y por qué?
+Me quedaría con el modelo intermedio porque logró el mejor equilibrio entre precisión y generalización. Mientras el modelo simple subajustaba y el complejo mostraba sobreajuste, el intermedio con dropout mantuvo ~85% de accuracy en test sin complicidad innecesaria, facilitando mantenimiento y despliegue.
+
+A pesar de decidir un modelo final ¿Considerarías mejoras a ese mísmo? ¿Cuáles?
+Sí: 1) EarlyStopping + ReduceLROnPlateau para entrenamiento adaptativo, 2) KerasTuner para optimizar hiperparámetros automáticamente, 3) Validación cruzada estratificada para asegurar distribución de clases, 4) Análisis de matriz de confusión para ajustar pesos en clases confundidas, y 5) Exportación a TFLite si se requiere despliegue ligero.
+
+Link de entrega: https://github.com/angelaramiz/Perceptr-n-multicapa
